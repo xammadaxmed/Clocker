@@ -8,6 +8,10 @@ namespace Clocker.Helpers
 
         public static string MD5Hash(string plainText)
         {
+            if(String.IsNullOrEmpty(plainText))
+            {
+                return "";
+            }
            
                 StringBuilder sb = new StringBuilder();
 
